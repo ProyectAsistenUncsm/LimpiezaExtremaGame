@@ -30,7 +30,7 @@ public class ErlyMove : MonoBehaviour
         {
             animator.SetBool("isWalking", false);
             animator.SetFloat("LastInputX", moveInput.x);
-            animator.SetFloat("LastInputY", moveInput .y);
+            animator.SetFloat("LastInputY", moveInput.y);
         }
 
         moveInput = context.ReadValue<Vector2>();
