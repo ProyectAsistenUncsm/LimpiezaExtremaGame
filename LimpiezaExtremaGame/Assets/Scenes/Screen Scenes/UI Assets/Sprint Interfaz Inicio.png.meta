@@ -1,0 +1,821 @@
+fileFormatVersion: 2
+guid: 23a3adacd29325746b0d06f6c8eb675a
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Sprint Interfaz Inicio_0
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 1423
+        width: 976
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78dea273c7a983a4f8fad9a77b564fd7
+      internalID: 1997821139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprint Interfaz Inicio_15
+      rect:
+        serializedVersion: 2
+        x: 1108
+        y: 1695
+        width: 796
+        height: 277
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b1b3b6f742464a4f985c68b08c2dea5
+      internalID: 126999393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprint Interfaz Inicio_22
+      rect:
+        serializedVersion: 2
+        x: 1115
+        y: 1570
+        width: 362
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fa94c0fabd46e443b64c37bd05210b5
+      internalID: 1339069462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprint Interfaz Inicio_23
+      rect:
+        serializedVersion: 2
+        x: 1501
+        y: 1570
+        width: 362
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daa1042318be32f4c8221ccb46971f04
+      internalID: -965409232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprint Interfaz Inicio_24
+      rect:
+        serializedVersion: 2
+        x: 1115
+        y: 1472
+        width: 362
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37af14b807ef13642a01f7000143ec5c
+      internalID: -1999510891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprint Interfaz Inicio_25
+      rect:
+        serializedVersion: 2
+        x: 1501
+        y: 1478
+        width: 298
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbd9a21e2f114fd45abce610eeeadfc3
+      internalID: -229612628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprint Interfaz Inicio_26
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 1273
+        width: 61
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 427a93c6d6c6c5045b69f4e5af535137
+      internalID: -1153207318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprint Interfaz Inicio_27
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 1274
+        width: 65
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bcf44d05760c9946b626a619edf8f8b
+      internalID: 1402695906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprint Interfaz Inicio_28
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 1331
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc1c780e71be7e046be4fd16428de07c
+      internalID: 1790375122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprint Interfaz Inicio_29
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 1331
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a928273cdc661749b7946f01b5bdc34
+      internalID: -739726566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprint Interfaz Inicio_30
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 1300
+        width: 43
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10cc033c37a8dc249b34d2ddb0ca4248
+      internalID: -1080102312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprint Interfaz Inicio_31
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 1348
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 459f35c25ec66c0488aa2e5d5d3a6cf1
+      internalID: 1857196212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprint Interfaz Inicio_32
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 1300
+        width: 43
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24af64f377f26bc4fafc378f1b87974f
+      internalID: 836536735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprint Interfaz Inicio_33
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 1356
+        width: 31
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cfbe9faf6dfb9342a2f325e5d6e8da8
+      internalID: -1463040104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprint Interfaz Inicio_34
+      rect:
+        serializedVersion: 2
+        x: 737
+        y: 1344
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61480a4695fd22949b738e1011de2c47
+      internalID: 4051499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprint Interfaz Inicio_35
+      rect:
+        serializedVersion: 2
+        x: 765
+        y: 1300
+        width: 43
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 251662e5ee90c514da7ff5c0a8a0ce96
+      internalID: -1740206193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprint Interfaz Inicio_36
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 1360
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92b899ffc9f01984f82da3480125d0d4
+      internalID: -1729824990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprint Interfaz Inicio_37
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 1335
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11293f4a68a132940a405f74b1187afd
+      internalID: 747510696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprint Interfaz Inicio_38
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 1298
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b14fd1b6b4d4a04b95bf99a535c2750
+      internalID: 663853922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprint Interfaz Inicio_39
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 1298
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0461ba60c68e13341bfcfb2b3e18ee17
+      internalID: 2092317002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprint Interfaz Inicio_40
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 1119
+        width: 50
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88fe3e89791ffad40ae748dd8aeb4c36
+      internalID: 2065657887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprint Interfaz Inicio_41
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 1136
+        width: 84
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a05dcbd797a2a9b4f8fd31005abeb4bb
+      internalID: 932717397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprint Interfaz Inicio_42
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 1125
+        width: 67
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 004ccccc6ede40e4e973ba262348077c
+      internalID: 1109283906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprint Interfaz Inicio_43
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 1130
+        width: 76
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68fa0c9ae83621c4ba35ba08ce6094e4
+      internalID: -485481085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprint Interfaz Inicio_44
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 1129
+        width: 64
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 222f83b7c04461044844306b034616a7
+      internalID: 2056694850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprint Interfaz Inicio_45
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 1129
+        width: 64
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6668bf6301de82943ada924ff125f067
+      internalID: 2038684766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprint Interfaz Inicio_46
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 1128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f043597111748d4e953abbac34d1ddc
+      internalID: -802800737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprint Interfaz Inicio_47
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 1128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7960eadf3dd5f3440893b3cea5f09dc6
+      internalID: 1715360354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprint Interfaz Inicio_48
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 964
+        width: 74
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0115d458ae81f164c993c5ff2c591c99
+      internalID: -566518700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprint Interfaz Inicio_49
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 961
+        width: 74
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d533beffc74003247b78b45707d9a6e4
+      internalID: 1281054286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Sprint Interfaz Inicio_0: 1997821139
+      Sprint Interfaz Inicio_1: -1734146635
+      Sprint Interfaz Inicio_10: 1177985852
+      Sprint Interfaz Inicio_11: 424007270
+      Sprint Interfaz Inicio_12: -1795074251
+      Sprint Interfaz Inicio_13: 153664131
+      Sprint Interfaz Inicio_14: -536659568
+      Sprint Interfaz Inicio_15: 126999393
+      Sprint Interfaz Inicio_16: 1124387870
+      Sprint Interfaz Inicio_17: 1922443778
+      Sprint Interfaz Inicio_18: -1392304973
+      Sprint Interfaz Inicio_19: 1311052986
+      Sprint Interfaz Inicio_2: -1529941394
+      Sprint Interfaz Inicio_20: -1125611456
+      Sprint Interfaz Inicio_21: -202626611
+      Sprint Interfaz Inicio_22: 1339069462
+      Sprint Interfaz Inicio_23: -965409232
+      Sprint Interfaz Inicio_24: -1999510891
+      Sprint Interfaz Inicio_25: -229612628
+      Sprint Interfaz Inicio_26: -1153207318
+      Sprint Interfaz Inicio_27: 1402695906
+      Sprint Interfaz Inicio_28: 1790375122
+      Sprint Interfaz Inicio_29: -739726566
+      Sprint Interfaz Inicio_3: 439223763
+      Sprint Interfaz Inicio_30: -1080102312
+      Sprint Interfaz Inicio_31: 1857196212
+      Sprint Interfaz Inicio_32: 836536735
+      Sprint Interfaz Inicio_33: -1463040104
+      Sprint Interfaz Inicio_34: 4051499
+      Sprint Interfaz Inicio_35: -1740206193
+      Sprint Interfaz Inicio_36: -1729824990
+      Sprint Interfaz Inicio_37: 747510696
+      Sprint Interfaz Inicio_38: 663853922
+      Sprint Interfaz Inicio_39: 2092317002
+      Sprint Interfaz Inicio_4: -961078377
+      Sprint Interfaz Inicio_40: 2065657887
+      Sprint Interfaz Inicio_41: 932717397
+      Sprint Interfaz Inicio_42: 1109283906
+      Sprint Interfaz Inicio_43: -485481085
+      Sprint Interfaz Inicio_44: 2056694850
+      Sprint Interfaz Inicio_45: 2038684766
+      Sprint Interfaz Inicio_46: -802800737
+      Sprint Interfaz Inicio_47: 1715360354
+      Sprint Interfaz Inicio_48: -566518700
+      Sprint Interfaz Inicio_49: 1281054286
+      Sprint Interfaz Inicio_5: 658846425
+      Sprint Interfaz Inicio_50: -1352922594
+      Sprint Interfaz Inicio_6: 213321694
+      Sprint Interfaz Inicio_7: 370061292
+      Sprint Interfaz Inicio_8: -174529595
+      Sprint Interfaz Inicio_9: -1198612296
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
