@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CollectTrashQuestStep : QuestStep
+public class LimpiarAmericanDonutsQuestStep : QuestStep
 {
     private int trashCollected = 0;
     private int trashToComplete = 5;
@@ -19,13 +19,13 @@ public class CollectTrashQuestStep : QuestStep
 
     private void TrashCollected()
     {
-        if(trashCollected < trashToComplete)
+        if (trashCollected < trashToComplete)
         {
             trashCollected++;
             UpdateState();
         }
 
-        if(trashCollected >= trashToComplete)
+        if (trashCollected >= trashToComplete)
         {
             FinishQuestStep();
         }
@@ -42,4 +42,5 @@ public class CollectTrashQuestStep : QuestStep
         this.trashCollected = System.Int32.Parse(state);
         UpdateState();
     }
+
 }

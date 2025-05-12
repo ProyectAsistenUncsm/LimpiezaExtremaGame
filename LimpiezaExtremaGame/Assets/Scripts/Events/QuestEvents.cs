@@ -46,4 +46,13 @@ public class QuestEvents
             onQuestStepStateChange(id, stepIndex, questStepState);
         }
     }
+
+    public event System.Action onQuestsLoaded;
+    public void QuestsLoaded()
+    {
+        if(onQuestsLoaded != null)
+        {
+            onQuestsLoaded.Invoke();
+        }
+    }
 }

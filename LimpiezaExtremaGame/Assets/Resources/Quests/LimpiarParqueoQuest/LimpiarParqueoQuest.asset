@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ff4126725933c7b4f9a836bc791f1a60, type: 3}
-  m_Name: LimpiarCineMarkQuest
+  m_Name: LimpiarParqueoQuest
   m_EditorClassIdentifier: 
-  <id>k__BackingField: LimpiarCineMarkQuest
-  displayName: Limpiar CineMark
+  <id>k__BackingField: LimpiarParqueoQuest
+  displayName: Limpiar el Parqueo
   questPrerequisites:
-  - {fileID: 11400000, guid: 3d0ad207e0592244aab847f93babcb8e, type: 2}
+  - {fileID: 11400000, guid: 627ba6b9130f3b7458c7fd76b51fdac6, type: 2}
   questStepPrefabs:
-  - {fileID: 5323020113747065525, guid: 964dd3a385e94524d840f0d8b9f43388, type: 3}
+  - {fileID: 1567852518985371765, guid: bde1d2bb8fb0353429afc37953aa69a3, type: 3}
   goldReward: 100

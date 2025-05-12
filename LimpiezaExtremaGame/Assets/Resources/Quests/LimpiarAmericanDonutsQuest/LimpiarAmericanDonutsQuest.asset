@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ff4126725933c7b4f9a836bc791f1a60, type: 3}
-  m_Name: CollectTrashQuest
+  m_Name: LimpiarAmericanDonutsQuest
   m_EditorClassIdentifier: 
-  <id>k__BackingField: CollectTrashQuest
+  <id>k__BackingField: LimpiarAmericanDonutsQuest
   displayName: Limpiar American Donuts
   questPrerequisites: []
   questStepPrefabs:
-  - {fileID: 7518252424570718127, guid: e97ebba34426bcc4188d8dbb338de9ef, type: 3}
+  - {fileID: 8462072188875736617, guid: b16a6584a07278943a7d45a5d9665778, type: 3}
   goldReward: 50
