@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Screen Scenes/StartMenu.unity
     guid: aa9eaca8cc488c346a3604fa5c1bb6e1
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/Scenes/Metrocentro.unity
+    guid: bcc41d0b901cb0c40bad9e10af926103
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 491f9dcc96bd01f4bb3d03b4b6698cb2
   m_configObjects: {}
