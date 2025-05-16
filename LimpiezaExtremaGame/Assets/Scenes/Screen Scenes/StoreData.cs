@@ -4,6 +4,7 @@ using UnityEngine;
 using System.IO;
 using UnityEditor.Experimental.RestService;
 using UnityEngine.UI;
+using System;
 
 
 public class StoreData : MonoBehaviour
@@ -23,7 +24,10 @@ public class StoreData : MonoBehaviour
         //Intentar cargar los datos del jugador
         if (File.Exists(_path))
         {
+            LoadData();
+
             //Load GameData.json
+            Debug.Log("Se ha encontrado un archivo de guardado, se ha cargado de forma exitosa");
         }
         else
         {
@@ -31,6 +35,8 @@ public class StoreData : MonoBehaviour
             InizializeData();
             //Save GameData.json
             SaveData();
+
+            Debug.Log("No existe un archivo de guardado, se ha creado uno nuevo.");
         }
     }
 
