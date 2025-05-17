@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b418fdddac9fb4947a523fc0c40959a5
+guid: 7d2b071687ecd5c458a575422c4cd0c0
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: 4
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -123,13 +123,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Objetos 1_0
+      name: Pixel Art, La joela_0
       rect:
         serializedVersion: 2
-        x: 28
-        y: 626
-        width: 40
-        height: 83
+        x: 606
+        y: 1532
+        width: 280
+        height: 444
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,20 +137,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1db3c0e51de022144bbd73d10cef6a15
-      internalID: -1323322616
+      spriteID: 75778eeb928819f4387c276d2ca65e87
+      internalID: -711744825
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Objetos 1_1
+      name: Pixel Art, La joela_1
       rect:
         serializedVersion: 2
-        x: 82
-        y: 636
-        width: 39
-        height: 65
+        x: 1106
+        y: 1532
+        width: 280
+        height: 444
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -158,20 +158,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 334b45bbe5343d04e930060fbca73253
-      internalID: -1934951964
+      spriteID: 4bebe65befd9a3e4cbe6dcf5347fabff
+      internalID: 126357141
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Objetos 1_2
+      name: Pixel Art, La joela_2
       rect:
         serializedVersion: 2
-        x: 133
-        y: 633
-        width: 51
-        height: 69
+        x: 1598
+        y: 1532
+        width: 280
+        height: 444
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -179,20 +179,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dda0b0c9d03c7a147b8c83a36ad09b59
-      internalID: -2106981295
+      spriteID: 8bc9ee7a533c910408d6a1279183f2b5
+      internalID: -1603757460
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Objetos 1_3
+      name: Pixel Art, La joela_3
       rect:
         serializedVersion: 2
-        x: 193
-        y: 639
-        width: 33
-        height: 64
+        x: 606
+        y: 1025
+        width: 280
+        height: 443
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1726dc42a985cac43903993bae04334f
-      internalID: 1551836322
+      spriteID: 26526e2236cb72b419ccc2a6443c1794
+      internalID: -1372958080
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Objetos 1_4
+      name: Pixel Art, La joela_4
       rect:
         serializedVersion: 2
-        x: 3
-        y: 462
-        width: 231
-        height: 157
+        x: 1106
+        y: 1029
+        width: 280
+        height: 444
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -221,20 +221,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b42e0aa4fcd453d448045dcf5df7416e
-      internalID: -677998367
+      spriteID: 8b70dc79318376d428b5ab07ec998696
+      internalID: -966461145
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Objetos 1_5
+      name: Pixel Art, La joela_5
       rect:
         serializedVersion: 2
-        x: 3
-        y: 295
-        width: 235
-        height: 159
+        x: 1598
+        y: 1029
+        width: 288
+        height: 444
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -242,20 +242,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 03c09ff391b9b3d4c9701a9ba1e4470c
-      internalID: 910684975
+      spriteID: 7acb02c7d1db0db4da04acf157729b3b
+      internalID: -874994478
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Objetos 1_6
+      name: Pixel Art, La joela_6
       rect:
         serializedVersion: 2
-        x: 4
-        y: 149
-        width: 260
-        height: 130
+        x: 513
+        y: 543
+        width: 402
+        height: 417
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -263,20 +263,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 385c007ae7e606e4c8ed9500bc0b9727
-      internalID: 222566078
+      spriteID: afa689b18c36cbf47a769c99150f7646
+      internalID: -113962176
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Objetos 1_7
+      name: Pixel Art, La joela_7
       rect:
         serializedVersion: 2
-        x: 5
-        y: 5
-        width: 131
-        height: 130
+        x: 1027
+        y: 543
+        width: 388
+        height: 417
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -284,20 +284,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0df45da50234cec479666f501ea69b84
-      internalID: 1666358618
+      spriteID: 3b02afcf83881a341ad5e5053b738a26
+      internalID: 772483689
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Objetos 1_8
+      name: Pixel Art, La joela_8
       rect:
         serializedVersion: 2
-        x: 154
-        y: 65
-        width: 78
-        height: 60
+        x: 1624
+        y: 543
+        width: 245
+        height: 417
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -305,8 +305,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cb67502a4e3608046bfdd022886af9bc
-      internalID: -1114047634
+      spriteID: 5a806ba8b93f16f43933b8046ca1e45d
+      internalID: 1704384875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Art, La joela_9
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 43
+        width: 245
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c68339a9d425d2b4089612482d0f76e0
+      internalID: 1658415627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Art, La joela_10
+      rect:
+        serializedVersion: 2
+        x: 1027
+        y: 43
+        width: 388
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5417adca605dc51419f46e14a3b22fd4
+      internalID: 1506084344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Art, La joela_11
+      rect:
+        serializedVersion: 2
+        x: 1552
+        y: 43
+        width: 388
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfe315689775b054fa37053953595cbf
+      internalID: -1485400141
       vertices: []
       indices: 
       edges: []
@@ -322,15 +385,18 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Objetos 1_0: -1323322616
-      Objetos 1_1: -1934951964
-      Objetos 1_2: -2106981295
-      Objetos 1_3: 1551836322
-      Objetos 1_4: -677998367
-      Objetos 1_5: 910684975
-      Objetos 1_6: 222566078
-      Objetos 1_7: 1666358618
-      Objetos 1_8: -1114047634
+      Pixel Art, La joela_0: -711744825
+      Pixel Art, La joela_1: 126357141
+      Pixel Art, La joela_10: 1506084344
+      Pixel Art, La joela_11: -1485400141
+      Pixel Art, La joela_2: -1603757460
+      Pixel Art, La joela_3: -1372958080
+      Pixel Art, La joela_4: -966461145
+      Pixel Art, La joela_5: -874994478
+      Pixel Art, La joela_6: -113962176
+      Pixel Art, La joela_7: 772483689
+      Pixel Art, La joela_8: 1704384875
+      Pixel Art, La joela_9: 1658415627
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
