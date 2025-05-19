@@ -60,3 +60,6 @@ TagManager:
   - name: Decor
     uniqueID: 763612641
     locked: 0
+  - name: Trash
+    uniqueID: 1251543665
+    locked: 0

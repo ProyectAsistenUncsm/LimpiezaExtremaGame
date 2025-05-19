@@ -23,13 +23,14 @@ public class TrashUI : MonoBehaviour, IDataPersistence
     public void LoadData(GameData data)
     {
         trashCollected = 0;
-        foreach (KeyValuePair<string, bool> pair in data.trashCollected)
+        foreach (TrashSaveData trash in data.trashCollected)
         {
-            if (pair.Value)
-            {
-                trashCollected++;
-            }
+            string id = trash.id;
+            bool collected = trash.collected;
+
+            // Usa id y collected como antes
         }
+
         UpdateTrashText();
     }
 
