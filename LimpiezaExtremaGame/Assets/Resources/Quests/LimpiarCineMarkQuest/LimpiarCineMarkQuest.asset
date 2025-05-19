@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff4126725933c7b4f9a836bc791f1a60, type: 3}
+  m_Name: LimpiarCineMarkQuest
+  m_EditorClassIdentifier: 
+  <id>k__BackingField: LimpiarCineMarkQuest
+  displayName: Limpiar CineMark
+  questPrerequisites:
+  - {fileID: 11400000, guid: 3d0ad207e0592244aab847f93babcb8e, type: 2}
+  questStepPrefabs:
+  - {fileID: 5323020113747065525, guid: 964dd3a385e94524d840f0d8b9f43388, type: 3}
+  goldReward: 100
