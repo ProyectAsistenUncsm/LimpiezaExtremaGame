@@ -27,7 +27,7 @@ public class StoreData : MonoBehaviour
             LoadData();
 
             //Load GameData.json
-            Debug.Log("Se ha encontrado un archivo de guardado, se ha cargado de forma exitosa");
+            Debug.Log("Se ha encontrado un archivo de guardado, se ha cargado de forma exitosa.");
         }
         else
         {
