@@ -5,9 +5,8 @@ using UnityEngine;
 [System.Serializable]
 public class GameData
 {
-
     public Vector3 playerPosition;
-    public List<TrashSaveData> trashCollected;
+    public SerializableDictionary<string, bool> trashCollected;
     public List<QuestData> activeQuests;
     public int currentTrash;
     public int currentGold;
@@ -19,23 +18,9 @@ public class GameData
     public GameData()
     {
         playerPosition = Vector3.zero;
-        trashCollected = new List<TrashSaveData>();
+        trashCollected = new SerializableDictionary<string, bool>();
         activeQuests = new List<QuestData>();
         currentTrash = 0;
         currentGold = 0;
-    }
-}
-
-
-
-public class TrashSaveData
-{
-    public string id;
-    public bool collected;
-
-    public TrashSaveData(string id, bool collected)
-    {
-        this.id = id;
-        this.collected = collected;
     }
 }

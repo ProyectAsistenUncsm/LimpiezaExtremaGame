@@ -121,12 +121,4 @@ public class DataPersistenceManager : MonoBehaviour
     {
         return gameData != null;
     }
-    public void AddDataPersistenceObject(IDataPersistence obj)
-    {
-        if (!dataPersistenceObjects.Contains(obj))
-        {
-            dataPersistenceObjects.Add(obj);
-        }
-    }
-
 }

@@ -29,42 +29,34 @@ public class Trash : MonoBehaviour, IDataPersistence
 
         circleCollider = GetComponent<CircleCollider2D>();
         visual = GetComponentInChildren<SpriteRenderer>();
-
-        // REGISTRO EN EL SISTEMA DE GUARDADO:
-        DataPersistenceManager.instance?.AddDataPersistenceObject(this);
     }
 
     public void LoadData(GameData data)
     {
-        foreach (var trashData in data.trashCollected)
+        if(data.trashCollected.TryGetValue(id, out bool alreadyCollected) && alreadyCollected)
         {
-            if (trashData.id == id && trashData.collected)
-            {
-                circleCollider.enabled = false;
-                visual.gameObject.SetActive(false);
-                break;
-            }
+            circleCollider.enabled = false;
+            visual.gameObject.SetActive(false);
+            //GameEventsManager.instance.trashEvents.TrashGained(trashGained);
         }
     }
 
-
     public void SaveData(ref GameData data)
     {
-        bool alreadyExists = false;
+        //if (!data.trashCollected.ContainsKey(id))
+        //{
+        //    data.trashCollected.Add(id, !circleCollider.enabled);
+        //}
 
-        for (int i = 0; i < data.trashCollected.Count;)
+        if (data.trashCollected.ContainsKey(id))
         {
-            if (data.trashCollected[i].id == id)
-            {
-                data.trashCollected[i].collected = !circleCollider.enabled;
-                alreadyExists = true;
-                break;
-            }
+            // Se actualiza si el valor ya existe
+            data.trashCollected[id] = !circleCollider.enabled;
         }
-
-        if (!alreadyExists)
+        else
         {
-            data.trashCollected.Add(new TrashSaveData(id, !circleCollider.enabled));
+            // Si no existe se agrega
+            data.trashCollected.Add(id, !circleCollider.enabled);
         }
     }
 
@@ -74,19 +66,9 @@ public class Trash : MonoBehaviour, IDataPersistence
         visual.gameObject.SetActive(false);
         GameEventsManager.instance.trashEvents.TrashGained(trashGained);
         GameEventsManager.instance.miscEvents.TrashCollected();
-
-        circleCollider.enabled = false;
-        visual.gameObject.SetActive(false);
-
-        GameEventsManager.instance.trashEvents.TrashGained(trashGained);
-        GameEventsManager.instance.trashEvents.TrashCollected(id);  // <- ESTE es clave
-
-
         StopAllCoroutines();
         //StartCoroutine(RespawnAfterTime());
     }
-
-
 
     // Desactivar para que la basura pueda reaparecer despues de un tiempo determinado 
     //private IEnumerator RespawnAfterTime()

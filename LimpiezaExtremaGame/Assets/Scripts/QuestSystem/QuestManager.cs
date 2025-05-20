@@ -5,7 +5,7 @@ using UnityEngine;
 public class QuestManager : MonoBehaviour, IDataPersistence
 {
     [Header("Config")]
-    [SerializeField] //private bool loadQuestState = true;
+    [SerializeField] private bool loadQuestState = true;
 
     private Dictionary<string, Quest> questMap;
 

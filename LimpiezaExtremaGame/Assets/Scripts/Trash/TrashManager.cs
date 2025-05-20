@@ -51,13 +51,13 @@ public class TrashManager : MonoBehaviour, IDataPersistence
     {
         this.currentTrash = data.currentTrash;
 
-        this.trashCollected = new Dictionary<string, bool>();
+        //this.trashCollected = new Dictionary<string, bool>();
 
-        if (data.trashCollected != null)
+        if(data.trashCollected != null)
         {
-            foreach (TrashSaveData entry in data.trashCollected)
+            foreach (var kvp in data.trashCollected)
             {
-                this.trashCollected[entry.id] = entry.collected;
+                this.trashCollected[kvp.Key] = kvp.Value;
             }
         }
 
@@ -68,15 +68,6 @@ public class TrashManager : MonoBehaviour, IDataPersistence
     public void SaveData(ref GameData data)
     {
         data.currentTrash = this.currentTrash;
-
-        data.trashCollected = new List<TrashSaveData>();
-        foreach (TrashSaveData trashData in data.trashCollected)
-        {
-            string id = trashData.id;
-            bool collected = trashData.collected;
-        }
-
-
 
         //data.trashCollected = new SerializableDictionary<string, bool>();
         //foreach (var kvp in this.trashCollected)

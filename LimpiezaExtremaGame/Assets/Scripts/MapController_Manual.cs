@@ -4,17 +4,18 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class MapController_Manual : MonoBehaviour
+public class MapController_Manual : MonoBehaviour, IDataPersistence
 {
     public static MapController_Manual Instance { get; set; }
 
+    [Header("Minimapa UI")]
+    public RectTransform mapContainer;
     public GameObject mapParent;
     List<Image> mapImages;
 
+    [Header("Icono y colores")]
     public Color highlightColour = Color.yellow;
     public Color dimmedColour = new Color(1f, 1f, 1f, 0.5f);
-
-    public RectTransform playerIconTransform;
 
     private void Awake()
     {
@@ -38,16 +39,27 @@ public class MapController_Manual : MonoBehaviour
         }
 
         Image currentArea = mapImages.Find(x => x.name == areaName);
-
-        if(currentArea != null)
+        if (currentArea == null)
         {
-            currentArea.color = highlightColour;
+            Debug.LogWarning("Area no ha sido encontrada: " + areaName);
+            return;
+        }
 
-            playerIconTransform.position = currentArea.GetComponent<RectTransform>().position;
-        }
-        else
+        currentArea.color = highlightColour;
+    }
+
+    public void LoadData(GameData data)
+    {
+        if (!string.IsNullOrEmpty(data.currentMapBoundary))
         {
-            Debug.LogWarning("Area not found" + areaName);
+            HighlightArea(data.currentMapBoundary);
         }
+    }
+
+    public void SaveData(ref GameData data)
+    {
+        Image current = mapImages.Find(x => x.color == highlightColour);
+        if (current != null)
+            data.currentMapBoundary = current.name;
     }
 }
