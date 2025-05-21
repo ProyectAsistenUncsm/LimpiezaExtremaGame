@@ -55,6 +55,10 @@ QualitySettings:
     terrainFadeLength: 5
     terrainMaxTrees: 50
     excludedTargetPlatforms:
+<<<<<<< HEAD
+=======
+    - Android
+>>>>>>> origin/Elsandiwchito49
     - Server
     - Standalone
   - serializedVersion: 3
@@ -207,7 +211,13 @@ QualitySettings:
     terrainFadeLength: 5
     terrainMaxTrees: 50
     excludedTargetPlatforms:
+<<<<<<< HEAD
     - Server
+=======
+    - Android
+    - Server
+    - Standalone
+>>>>>>> origin/Elsandiwchito49
   - serializedVersion: 3
     name: Very High
     pixelLightCount: 3
@@ -257,7 +267,13 @@ QualitySettings:
     terrainFadeLength: 5
     terrainMaxTrees: 50
     excludedTargetPlatforms:
+<<<<<<< HEAD
     - Server
+=======
+    - Standalone
+    - Server
+    - Android
+>>>>>>> origin/Elsandiwchito49
   - serializedVersion: 3
     name: Ultra
     pixelLightCount: 4
@@ -307,7 +323,13 @@ QualitySettings:
     terrainFadeLength: 5
     terrainMaxTrees: 50
     excludedTargetPlatforms:
+<<<<<<< HEAD
     - Server
+=======
+    - Android
+    - Server
+    - Standalone
+>>>>>>> origin/Elsandiwchito49
   m_TextureMipmapLimitGroupNames: []
   m_PerPlatformDefaultQuality:
     Android: 2
