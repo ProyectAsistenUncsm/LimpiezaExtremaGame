@@ -5,6 +5,9 @@ using System.IO;
 using UnityEditor.Experimental.RestService;
 using UnityEngine.UI;
 using System;
+using JetBrains.Annotations;
+using System.Runtime.CompilerServices;
+using Unity.VisualScripting.Antlr3.Runtime.Tree;
 
 
 public class StoreData : MonoBehaviour
@@ -12,12 +15,9 @@ public class StoreData : MonoBehaviour
     [Header("UI Elements")]
     public InputField inputName;         // InputField para el nombre del jugador
     public Text txtMoney;               // Text para mostrar el dinero del jugador
-    public Text txtCurrentSkin;         // Text para mostrar la skin actual
-    public Text txtDefaultSkin;         // Text para mostrar si la skin default está disponible
-    public Text txtSkin01;              // Text para mostrar si la skin 01 está disponible
-    public Text txtSkin02;              // Text para mostrar si la skin 02 está disponible
-    public Text txtSkin03;              // Text para mostrar si la skin 03 está disponible
 
+    public GameObject btnSkin01;
+    public GameObject btnSkin02;
     // Start is called before the first frame update
     private void Awake()
     {
@@ -25,9 +25,10 @@ public class StoreData : MonoBehaviour
         if (File.Exists(_path))
         {
             LoadData();
+            UpdateUI(); // Actualizar la UI con los datos cargados
 
             //Load GameData.json
-            Debug.Log("Se ha encontrado un archivo de guardado, se ha cargado de forma exitosa");
+            Debug.Log("Se ha encontrado un archivo de guardado, se ha cargado de forma exitosa.");
         }
         else
         {
@@ -35,22 +36,23 @@ public class StoreData : MonoBehaviour
             InizializeData();
             //Save GameData.json
             SaveData();
-
+            UpdateUI(); // Actualizar la UI con los datos cargados
             Debug.Log("No existe un archivo de guardado, se ha creado uno nuevo.");
         }
+        
     }
 
 
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     private static string _path = @"C:\Limpeiza Extrema\StoreData.json";
@@ -89,8 +91,8 @@ public class StoreData : MonoBehaviour
             ownSkin03 = false
         };
     }
-    
-    
+
+
 
     //Metodo Save StoreData
     private void SaveData()
@@ -122,16 +124,84 @@ public class StoreData : MonoBehaviour
     }
 
     //Metodo UpdateUI
-    private void UpdateUI()
+    public void UpdateUI()
     {
+        if (inputName == null) Debug.LogError("inputName no asignado!");
+        if (txtMoney == null) Debug.LogError("txtMoney no asignado!");
+        if (playerData == null) Debug.LogError("playerData no asignado!");
+
+        if (playerData == null) return;
+        if (inputName != null) inputName.text = playerData.playerName;
+        if (txtMoney != null) txtMoney.text = playerData.playerMoney.ToString();
+
         // Actualizar la interfaz de usuario con los datos cargados
         inputName.text = playerData.playerName;
-        txtMoney.text = $"Money: {playerData.playerMoney}";
-        txtCurrentSkin.text = $"Current Skin: {playerData.currentSkin}";
-        txtDefaultSkin.text = $"Own Default: {playerData.ownSkin00}";
-        txtSkin01.text = $"Own Skin 01: {playerData.ownSkin01}";
-        txtSkin02.text = $"Own Skin 02: {playerData.ownSkin02}";
-        txtSkin03.text = $"Own Skin 03: {playerData.ownSkin03}";
+        txtMoney.text = playerData.playerMoney.ToString();
+
+       
+    }
+
+    public void SkinButton00 ()
+    {
+        Debug.Log("Funciona bien el boton 00 hp");
+    }
+
+    public void SkinButton01()
+    {
+
+        int precioSkin01 = 750;
+        if (playerData.ownSkin01 != true)
+        {
+            if(playerData.playerMoney>=precioSkin01)
+            {
+                playerData.playerMoney -= 750;
+                playerData.ownSkin01 = true;
+
+                btnSkin01.SetActive(false);
+
+                //btnSkin01Use.SetActive(true)
+
+                SaveData();
+                UpdateUI();
+            }
+            else
+            {
+                Debug.Log("Dinero para comprar la Skin con ID 01 insuficiente");
+            }
+        }
+        else
+        {
+            Debug.Log("Ya tienes esta skin");
+        }
+            
+    }
+
+    public void SkinButton02()
+    {
+        int precioSkin02 = 750;
+        if (playerData.ownSkin02 != true)
+        {
+            if (playerData.playerMoney >= precioSkin02)
+            {
+                playerData.playerMoney -= 750;
+                playerData.ownSkin02 = true;
+
+                btnSkin02.SetActive(false);
+
+                //btnSkin02Use.SetActive(true)
+
+                SaveData();
+                UpdateUI();
+            }
+            else
+            {
+                Debug.Log("Dinero para comprar la Skin con ID 01 insuficiente");
+            }
+        }
+        else
+        {
+            Debug.Log("Ya tienes esta skin");
+        }
     }
 
     // SET VALUE
