@@ -1,0 +1,3 @@
+repository "LimpiezaExtremaGame 2025-03-27_00-57-22/LimpiezaExtremaGame@4674073800900@cloud"
+  path "/"
+    smartbranch "/main/Revision"

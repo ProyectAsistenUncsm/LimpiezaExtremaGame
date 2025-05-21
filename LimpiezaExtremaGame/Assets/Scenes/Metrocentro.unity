@@ -36445,8 +36445,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 100}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: 2.1446, y: 92.0121}
+  m_SizeDelta: {x: 90.3421, y: 95.9759}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &514757547
 MonoBehaviour:
@@ -36766,7 +36766,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6068699205522864659, guid: 5e3a41bfd45e89c469f96fff89770a66, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.28
+      value: -2.62
       objectReference: {fileID: 0}
     - target: {fileID: 6068699205522864659, guid: 5e3a41bfd45e89c469f96fff89770a66, type: 3}
       propertyPath: m_LocalPosition.z
@@ -37095,8 +37095,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: 2.1446, y: -3.9638}
+  m_SizeDelta: {x: 90.3421, y: 95.9759}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &623792510
 MonoBehaviour:
@@ -37874,8 +37874,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 150, y: 50}
-  m_SizeDelta: {x: 200, y: 200}
+  m_AnchoredPosition: {x: 137.65788, y: 44.024117}
+  m_SizeDelta: {x: 180.6842, y: 191.9518}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &913078146
 MonoBehaviour:
@@ -42880,7 +42880,7 @@ GameObject:
   - component: {fileID: 1243729460}
   - component: {fileID: 1243729463}
   - component: {fileID: 1243729462}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Collision
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -57756,7 +57756,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -57776,7 +57776,7 @@ TilemapCollider2D:
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -59024,8 +59024,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -200, y: -50}
-  m_SizeDelta: {x: 100, y: 200}
+  m_AnchoredPosition: {x: -178.53944, y: -51.951767}
+  m_SizeDelta: {x: 90.3421, y: 191.9518}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1592572652
 MonoBehaviour:
@@ -60232,8 +60232,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -50, y: -100}
-  m_SizeDelta: {x: 200, y: 100}
+  m_AnchoredPosition: {x: -43.02626, y: -99.93971}
+  m_SizeDelta: {x: 180.6842, y: 95.9759}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2012524030
 MonoBehaviour:
@@ -60913,6 +60913,18 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9190042223356760523, guid: be29dec6f7fd5174cb0458f7f4f999d0, type: 3}
+      propertyPath: radioChequeo
+      value: 1.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 9190042223356760523, guid: be29dec6f7fd5174cb0458f7f4f999d0, type: 3}
+      propertyPath: intentosMaximos
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 9190042223356760523, guid: be29dec6f7fd5174cb0458f7f4f999d0, type: 3}
+      propertyPath: obstaculos.m_Bits
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 9190042223356760523, guid: be29dec6f7fd5174cb0458f7f4f999d0, type: 3}
       propertyPath: configuracionesDeZonas.Array.data[0].zona
       value: 
       objectReference: {fileID: 163280853}
@@ -60932,6 +60944,14 @@ PrefabInstance:
       propertyPath: configuracionesDeZonas.Array.data[4].zona
       value: 
       objectReference: {fileID: 391344568}
+    - target: {fileID: 9190042223356760523, guid: be29dec6f7fd5174cb0458f7f4f999d0, type: 3}
+      propertyPath: configuracionesDeZonas.Array.data[4].prefabsPermitidos.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9190042223356760523, guid: be29dec6f7fd5174cb0458f7f4f999d0, type: 3}
+      propertyPath: configuracionesDeZonas.Array.data[4].prefabsPermitidos.Array.data[1]
+      value: 
+      objectReference: {fileID: 7187094122211353883, guid: 44167ae4531a45b44a191296dafc5fa3, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

@@ -92,21 +92,23 @@ public class TrashSpawner : MonoBehaviour
         return Vector2.positiveInfinity;
     }
 
-    private void OnDrawGizmos()
+    private void OnDrawGizmosSelected()
     {
-        if (configuracionesDeZonas == null) return;
-
-        Gizmos.color = new Color(0f, 1f, 0f, 0.3f);
+        if (Application.isPlaying == false) return;
 
         foreach (var config in configuracionesDeZonas)
         {
-            if (config.zona == null) continue;
+            BoxCollider2D area = config.zona?.GetComponent<BoxCollider2D>();
+            if (area == null) continue;
 
-            BoxCollider2D col = config.zona.GetComponent<BoxCollider2D>();
-            if (col != null)
+            for (int i = 0; i < 10; i++)
             {
-                Bounds b = col.bounds;
-                Gizmos.DrawCube(b.center, b.size);
+                Vector2 random = new Vector2(
+                    Random.Range(area.bounds.min.x, area.bounds.max.x),
+                    Random.Range(area.bounds.min.y, area.bounds.max.y)
+                );
+
+                Gizmos.DrawWireSphere(random, radioChequeo);
             }
         }
     }
