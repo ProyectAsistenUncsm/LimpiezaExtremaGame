@@ -20,6 +20,10 @@ public class StoreData : MonoBehaviour
     public GameObject btnSkin01Use;
     public GameObject btnSkin02Use;
 
+    public GameObject btnSkin00InUse;
+    public GameObject btnSkin01InUse;
+    public GameObject btnSkin02InUse;
+
     public GameObject btnSkin01Buy;
     public GameObject btnSkin02Buy;
     // Start is called before the first frame update
@@ -43,7 +47,7 @@ public class StoreData : MonoBehaviour
             UpdateUI(); // Actualizar la UI con los datos cargados
             Debug.Log("No existe un archivo de guardado, se ha creado uno nuevo.");
         }
-        
+
     }
 
 
@@ -59,7 +63,7 @@ public class StoreData : MonoBehaviour
 
     }
 
-    private static string _path = @"C:\Limpeiza Extrema\StoreData.json";
+    private static string _path = @"C:\Limpieza Extrema\StoreData.json";
 
 
     // Clase para agrupar los datos del jugador
@@ -73,7 +77,8 @@ public class StoreData : MonoBehaviour
         public bool ownSkin00;
         public bool ownSkin01;
         public bool ownSkin02;
-        public bool ownSkin03;
+        public bool doQuestMetrocentro;
+        public bool doQuestCondega;
     }
 
     private PlayerData playerData;
@@ -92,7 +97,8 @@ public class StoreData : MonoBehaviour
             ownSkin00 = true,
             ownSkin01 = false,
             ownSkin02 = false,
-            ownSkin03 = false
+            doQuestMetrocentro = false,
+            doQuestCondega = false,
         };
     }
 
@@ -141,7 +147,21 @@ public class StoreData : MonoBehaviour
         // Actualizar la interfaz de usuario con los datos cargados
         inputName.text = playerData.playerName;
         txtMoney.text = playerData.playerMoney.ToString();
-        //txtMoney2.text = playerData.playerMoney.ToString();
+
+        if (playerData.ownSkin00 == true)
+        {
+            if (playerData.currentSkin != 0)
+            {
+                btnSkin00Use.SetActive(true);
+                btnSkin00InUse.SetActive(false);
+            }
+            else //Si está la skin seleccionada
+            {
+                btnSkin00Use.SetActive(false);
+                btnSkin00InUse.SetActive(true);
+            }
+        }
+
 
         //Actualizar el estado de los botones en dependencia de si el jugador tiene la skin o no
         if (playerData.ownSkin01 == true) //Boton de comprar desaparece y sale el de usar si lo tiene
@@ -150,49 +170,59 @@ public class StoreData : MonoBehaviour
             {
                 btnSkin01Buy.SetActive(false);
                 btnSkin01Use.SetActive(true);
+                btnSkin01InUse.SetActive(false);
             }
-            else
+            else //Si está la skin seleccionada
             {
-
+                btnSkin01Buy.SetActive(false);
+                btnSkin01Use.SetActive(false);
+                btnSkin01InUse.SetActive(true);
             }
-            
         }
         else
         {
+            btnSkin01InUse.SetActive(false);
+            btnSkin01Use.SetActive(false);
             btnSkin01Buy.SetActive(true);
-            
         }
 
         if (playerData.ownSkin02 == true) //Boton de comprar desaparece y sale el de usar si lo tiene
         {
-            btnSkin02Buy.SetActive(false);
-            btnSkin02Use.SetActive(true); 
+            if (playerData.currentSkin != 2)
+            {
+                btnSkin02Buy.SetActive(false);
+                btnSkin02Use.SetActive(true);
+                btnSkin02InUse.SetActive(false);
+            }
+            else //Si está la skin seleccionada
+            {
+                btnSkin02Buy.SetActive(false);
+                btnSkin02Use.SetActive(false);
+                btnSkin02InUse.SetActive(true);
+            }
         }
         else
         {
             btnSkin02Buy.SetActive(true);
+            btnSkin02InUse.SetActive(false);
+            btnSkin02Use.SetActive(false);
         }
 
 
     }
 
-    public void SkinButton00 ()
-    {
-        Debug.Log("Funciona bien el boton 00 hp");
-    }
-
-    public void SkinButton01()
+    public void SkinButton01Buy()
     {
 
         int precioSkin01 = 750;
         if (playerData.ownSkin01 != true)
         {
-            if(playerData.playerMoney>=precioSkin01)
+            if (playerData.playerMoney >= precioSkin01)
             {
                 playerData.playerMoney -= 750;
                 playerData.ownSkin01 = true;
 
-                btnSkin01.SetActive(false);
+                // btnSkin01.SetActive(false);
 
                 //btnSkin01Use.SetActive(true)
 
@@ -208,10 +238,10 @@ public class StoreData : MonoBehaviour
         {
             Debug.Log("Ya tienes esta skin");
         }
-            
+
     }
 
-    public void SkinButton02()
+    public void SkinButton02Buy()
     {
         int precioSkin02 = 750;
         if (playerData.ownSkin02 != true)
@@ -221,7 +251,7 @@ public class StoreData : MonoBehaviour
                 playerData.playerMoney -= 750;
                 playerData.ownSkin02 = true;
 
-                btnSkin02.SetActive(false);
+                //btnSkin02.SetActive(false);
 
                 //btnSkin02Use.SetActive(true)
 
@@ -230,7 +260,7 @@ public class StoreData : MonoBehaviour
             }
             else
             {
-                Debug.Log("Dinero para comprar la Skin con ID 01 insuficiente");
+                Debug.Log("Dinero para comprar la Skin con ID 02 insuficiente");
             }
         }
         else
@@ -239,23 +269,26 @@ public class StoreData : MonoBehaviour
         }
     }
 
-    // SET VALUE
-
-    /*
-     PARA ACTUALIZAR LOS DATOS SERIA ALGO COMO
-
-        playerData.PlayerName = inputName.text;
-        playerData.PlayerMoney = 1500f;
-        playerData.CurrentSkin = 2;
-        playerData.OwnSKinDefault = true;
-        playerData.OwnSKin01 = true;
-        playerData.OwnSKin02 = false;
-        playerData.OwnSKin03 = true;
-
-     // Guardar los datos nuevos
-        SaveData();
-
-    // Actualizar la UI
+    public void SkinButton00Use()
+    {
+        playerData.currentSkin = 0; // Cambiar la skin actual a la skin 00
+        SaveData(); // Guardar los datos después de cambiar la skin
+        UpdateUI(); // Actualizar la UI después de cambiar la skin
+        Debug.Log("Skin 00 en uso");
+    }
+    public void SkinButton01Use()
+    {
+        playerData.currentSkin = 1; // Cambiar la skin actual a la skin 01
+        SaveData(); 
         UpdateUI();
-    */
+        Debug.Log("Skin 01 en uso");
+    }
+
+    public void SkinButton02Use()
+    {
+        playerData.currentSkin = 2; // Cambiar la skin actual a la skin 02
+        SaveData();
+        UpdateUI();
+        Debug.Log("Skin 02 en uso");
+    }
 }
