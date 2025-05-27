@@ -16,8 +16,12 @@ public class StoreData : MonoBehaviour
     public InputField inputName;         // InputField para el nombre del jugador
     public Text txtMoney;               // Text para mostrar el dinero del jugador
 
-    public GameObject btnSkin01;
-    public GameObject btnSkin02;
+    public GameObject btnSkin00Use;
+    public GameObject btnSkin01Use;
+    public GameObject btnSkin02Use;
+
+    public GameObject btnSkin01Buy;
+    public GameObject btnSkin02Buy;
     // Start is called before the first frame update
     private void Awake()
     {
@@ -137,8 +141,39 @@ public class StoreData : MonoBehaviour
         // Actualizar la interfaz de usuario con los datos cargados
         inputName.text = playerData.playerName;
         txtMoney.text = playerData.playerMoney.ToString();
+        //txtMoney2.text = playerData.playerMoney.ToString();
 
-       
+        //Actualizar el estado de los botones en dependencia de si el jugador tiene la skin o no
+        if (playerData.ownSkin01 == true) //Boton de comprar desaparece y sale el de usar si lo tiene
+        {
+            if (playerData.currentSkin != 1)
+            {
+                btnSkin01Buy.SetActive(false);
+                btnSkin01Use.SetActive(true);
+            }
+            else
+            {
+
+            }
+            
+        }
+        else
+        {
+            btnSkin01Buy.SetActive(true);
+            
+        }
+
+        if (playerData.ownSkin02 == true) //Boton de comprar desaparece y sale el de usar si lo tiene
+        {
+            btnSkin02Buy.SetActive(false);
+            btnSkin02Use.SetActive(true); 
+        }
+        else
+        {
+            btnSkin02Buy.SetActive(true);
+        }
+
+
     }
 
     public void SkinButton00 ()
